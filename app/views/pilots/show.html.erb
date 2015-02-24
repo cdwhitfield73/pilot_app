@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @pilot.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @pilot.lastname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @pilot.email %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @pilot.city %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @pilot.phone %>
+</p>
+
+<%= link_to 'Edit', edit_pilot_path(@pilot) %> |
+<%= link_to 'Back', pilots_path %>
