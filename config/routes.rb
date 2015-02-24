@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :balloons
+
   resources :pilots
 
   # The priority is based upon order of creation: first created -> highest priority.

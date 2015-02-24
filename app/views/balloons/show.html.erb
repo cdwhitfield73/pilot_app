@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @balloon.name %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @balloon.size %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @balloon.number %>
+</p>
+
+<%= link_to 'Edit', edit_balloon_path(@balloon) %> |
+<%= link_to 'Back', balloons_path %>

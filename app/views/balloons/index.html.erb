@@ -1,0 +1,29 @@
+<h1>Listing balloons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+      <th>Number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @balloons.each do |balloon| %>
+      <tr>
+        <td><%= balloon.name %></td>
+        <td><%= balloon.size %></td>
+        <td><%= balloon.number %></td>
+        <td><%= link_to 'Show', balloon %></td>
+        <td><%= link_to 'Edit', edit_balloon_path(balloon) %></td>
+        <td><%= link_to 'Destroy', balloon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Balloon', new_balloon_path %>
